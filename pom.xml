@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.pac4j</groupId>
+	<artifactId>pac4j-oauth-ext</artifactId>
+	<packaging>jar</packaging>
+	<name>pac4j for OAuth protocol</name>
+	<version>1.8.9-SNAPSHOT</version>
+	<description>pac4j-oauth-1.8.9的扩展</description>
+
+	<properties>
+		<pac4j.version>1.8.9</pac4j.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.pac4j</groupId>
+			<artifactId>pac4j-oauth</artifactId>
+			<version>${pac4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.pac4j</groupId>
+			<artifactId>pac4j-oidc</artifactId>
+			<version>${pac4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.pac4j</groupId>
+			<artifactId>pac4j-saml</artifactId>
+			<version>${pac4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.pac4j</groupId>
+			<artifactId>pac4j-cas</artifactId>
+			<version>${pac4j.version}</version>
+		</dependency>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Releases</name>
+			<url>http://192.168.0.178:8081/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Snapshot</name>
+			<url>http://192.168.0.178:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
